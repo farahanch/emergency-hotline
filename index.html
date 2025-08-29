@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <!-- daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#F5FFF6]">
+    <!-- navbar -->
+    <nav class="flex justify-between items-center px-4 py-2 bg-white ">
+        <!-- nav-left -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+                <img src="./assets/logo.png" alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-xl font-bold text-[#006747] leading-tight">
+                Emergency <br> Service
+            </h1>
+        </div>
+
+        <!-- nav-right -->
+        <div class="flex items-center gap-3">
+
+            <div class="badge gap-1 bg-green-50 px-3 py-2">
+                <span id="heartCount">0</span> ❤️
+            </div>
+
+            <div class="badge gap-1 bg-green-50 px-3 py-2">
+                <span id="coinCount">100</span> 💰
+            </div>
+
+            <div class="badge gap-1 bg-green-600 text-white px-4 py-2 rounded-full">
+                <span id="copyCount">0</span> Copy
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <header>
+        <div
+            class="mx-auto w-full px-4 py-12 text-white flex flex-col items-center text-center gap-3 bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223]">
+
+            <!-- logo -->
+            <div class="w-20 h-20 rounded-full overflow-hidden ring-4 ring-white/40">
+                <img src="./assets/logo-dark.png" alt="Govt. Logo" class="w-full h-full object-cover">
+            </div>
+
+            <!-- title -->
+            <h2 class="text-3xl font-bold text-[40px] text-white">
+                Emergency Service Directory
+            </h2>
+
+            <!-- slogan -->
+            <p class="text-xl text-white">
+                Government Emergency Services at Your Fingertip – A Project by
+                Government of the People’s Republic of Bangladesh.
+            </p>
+
+        </div>
+    </header>
+
+    <!-- cards + call history -->
+    <!-- ===== Main: Cards + Call History ===== -->
+<main class="w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+  <!-- LEFT: 9 cards (3x3 on xl, 2x on sm) -->
+  <section id="cards" class="lg:col-span-9 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+
+    <!-- Card 1 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-rose-50 grid place-items-center">
+          <img src="./assets/emergency.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">National Emergency Number</h3>
+        <p class="text-sm text-gray-500">National Emergency</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">999</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">All</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="National Emergency Number" data-number="999">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-blue-50 grid place-items-center">
+          <img src="./assets/police.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Police Helpline Number</h3>
+        <p class="text-sm text-gray-500">Police</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">999</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Police</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Police Helpline Number" data-number="999">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-rose-50 grid place-items-center">
+          <img src="./assets/fire-service.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Fire Service Number</h3>
+        <p class="text-sm text-gray-500">Fire Service</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">999</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Fire</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Fire Service Number" data-number="999">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-pink-50 grid place-items-center">
+          <img src="./assets/ambulance.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Ambulance Service</h3>
+        <p class="text-sm text-gray-500">Ambulance</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">1994-999999</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Health</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Ambulance Service" data-number="1994-999999">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-emerald-50 grid place-items-center">
+          <img src="./assets/women-child.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Women & Child Helpline</h3>
+        <p class="text-sm text-gray-500">Women & Child Helpline</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">109</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Help</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Women & Child Helpline" data-number="109">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-amber-50 grid place-items-center">
+          <img src="./assets/anti-corruption.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Anti-Corruption Helpline</h3>
+        <p class="text-sm text-gray-500">Anti-Corruption</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">106</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Govt.</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Anti-Corruption Helpline" data-number="106">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 7 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-yellow-50 grid place-items-center">
+          <img src="./assets/electricity.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Electricity Helpline</h3>
+        <p class="text-sm text-gray-500">Electricity Outage</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">16216</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Electricity</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Electricity Helpline" data-number="16216">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 8 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-purple-50 grid place-items-center">
+          <img src="./assets/brac.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Brac Helpline</h3>
+        <p class="text-sm text-gray-500">Brac</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">16445</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">NGO</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Brac Helpline" data-number="16445">📞 Call</button>
+      </div>
+    </article>
+
+    <!-- Card 9 -->
+    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+      <div class="mt-2">
+        <div class="w-12 h-12 mb-3 rounded-xl bg-teal-50 grid place-items-center">
+          <img src="./assets/Bangladesh-Railway.png" alt="icon" class="w-7 h-7 object-contain">
+        </div>
+        <h3 class="font-semibold">Bangladesh Railway Helpline</h3>
+        <p class="text-sm text-gray-500">Bangladesh Railway</p>
+      </div>
+      <p class="mt-3 text-2xl font-extrabold">163</p>
+      <span class="inline-block mt-2 px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-600">Travel</span>
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        <button class="h-10 border rounded-lg flex items-center justify-center gap-1 hover:bg-gray-50">📋 Copy</button>
+        <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
+                data-action="call" data-name="Bangladesh Railway Helpline" data-number="163">📞 Call</button>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- RIGHT: Call History -->
+  <aside class="lg:col-span-3">
+    <div class="bg-white rounded-2xl p-4 shadow">
+      <div class="flex items-center justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">🕘</span>
+          <h3 class="font-semibold">Call History</h3>
+        </div>
+        <button id="clearHistory" class="btn btn-sm btn-success text-white">Clear</button>
+      </div>
+
+      <!-- History list (static for now; JS later) -->
+      <ul id="historyList" class="space-y-2 text-sm">
+        <li class="text-gray-400">No calls yet.</li>
+      </ul>
+    </div>
+  </aside>
+
+</main>
+
+    
+
+
+
+
+
+
+
+
+
+    <!-- js connection -->
+    <script src="./connect.js"></script>
+</body>
+
+</html>
