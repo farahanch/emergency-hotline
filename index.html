@@ -17,24 +17,21 @@
 
 <body class="bg-[#F5FFF6]">
     <!-- navbar -->
-    <nav class="flex justify-between items-center px-4 py-2 bg-white ">
-        <!-- nav-left -->
+    <nav class="flex flex-wrap items-center justify-between gap-3 px-4 py-2 bg-white sticky top-0 z-50">
+        <!-- left -->
         <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full overflow-hidden">
-                <img src="./assets/logo.png" alt="" class="w-full h-full">
+                <img src="./assets/logo.png" alt="Logo" class="w-full h-full object-cover">
             </div>
-            <h1 class="text-xl font-bold text-[#006747] leading-tight">
-                Emergency <br> Service
+            <h1 class="font-bold leading-tight text-[#006747] text-lg sm:text-xl">
+                Emergency <br class="sm:hidden"> Service
             </h1>
         </div>
-        <!-- nav-right -->
-        <div class="flex items-center gap-3">
-            <div class="badge gap-1 bg-green-50 px-3 py-2">
-                <span id="heartCount">0</span> ❤️
-            </div>
-            <div class="badge gap-1 bg-green-50 px-3 py-2">
-                <span id="coinCount">100</span> 💰
-            </div>
+
+        <!-- right -->
+        <div class="flex items-center gap-2 sm:gap-3">
+            <div class="badge gap-1 bg-green-50 px-3 py-2"><span id="heartCount">0</span> ❤️</div>
+            <div class="badge gap-1 bg-green-50 px-3 py-2"><span id="coinCount">100</span> 💰</div>
             <div class="badge gap-1 bg-green-600 text-white px-4 py-2 rounded-full">
                 <span id="copyCount">0</span> Copy
             </div>
@@ -44,14 +41,12 @@
     <!-- banner -->
     <header>
         <div
-            class="mx-auto w-full px-4 py-12 text-white flex flex-col items-center text-center gap-3 bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223]">
-            <div class="w-20 h-20 rounded-full overflow-hidden ring-4 ring-white/40">
-                <img src="./assets/logo-dark.png" alt="" class="w-full h-full">
+            class="mx-auto w-full px-4 py-8 sm:py-12 text-white text-center bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223]">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden ring-4 ring-white/40 mx-auto">
+                <img src="./assets/logo-dark.png" alt="Govt. Logo" class="w-full h-full object-cover">
             </div>
-            <h2 class="text-3xl font-bold text-[40px] text-white">
-                Emergency Service Directory
-            </h2>
-            <p class="text-xl text-white">
+            <h2 class="mt-3 font-bold text-2xl sm:text-3xl md:text-[40px]">Emergency Service Directory</h2>
+            <p class="mt-2 text-sm sm:text-base md:text-lg">
                 Government Emergency Services at Your Fingertip – A Project by
                 Government of the People’s Republic of Bangladesh.
             </p>
@@ -302,15 +297,13 @@
 
         <!-- call -->
         <div class="lg:col-span-3">
-            <div class="bg-white rounded-2xl p-4 shadow">
-                <div class="flex items-center justify-between mb-3">
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <div class="flex items-center gap-2">
-                        <img src="./assets/Group-callH.svg" alt="" class="w-5 h-5">
-                        <h3 class="font-semibold">Call History</h3>
+                        <img src="./assets/Group-callH.svg" alt="Call history" class="w-5 h-5">
+                        <h3 class="font-semibold text-base sm:text-lg">Call History</h3>
                     </div>
-                    <button id="clearHistory" class="btn btn-sm btn-success text-white" aria-label="Clear call history">
-                        Clear
-                    </button>
+                    <button id="clearHistory" class="btn btn-sm btn-success text-white">Clear</button>
                 </div>
 
                 <ul id="historyList" class="space-y-2 text-sm">
@@ -318,6 +311,7 @@
                 </ul>
             </div>
         </div>
+
     </main>
 
     <!-- js connection -->
