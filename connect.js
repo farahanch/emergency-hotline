@@ -1,18 +1,18 @@
 console.log('testing connection')
 
-// grab navbar counters and history elements
+// counters
 const heartCountEl = document.getElementById('heartCount');
 const coinCountEl = document.getElementById('coinCount');
 const copyCountEl = document.getElementById('copyCount');
 const historyList = document.getElementById('historyList');
 const clearBtn = document.getElementById('clearHistory');
 
-// initial state from navbar
+// starting value
 let hearts = parseInt(heartCountEl.innerText || '0', 10);
 let coins = parseInt(coinCountEl.innerText || '100', 10);
 let copies = parseInt(copyCountEl.innerText || '0', 10);
 
-// heart function
+// heart 
 const heartBtns = document.getElementsByClassName('heart-btn');
 for (const btn of heartBtns) {
     btn.addEventListener('click', function () {
@@ -21,20 +21,18 @@ for (const btn of heartBtns) {
     });
 }
 
-// copy function
+// copy 
 const copyBtns = document.getElementsByClassName('copy-btn');
 for (const btn of copyBtns) {
     btn.addEventListener('click', function () {
-        // find the hotline number in the same card
+
         const card = this.closest('.relative');
         const numberEl = card.querySelector('p.mt-3'); 
         const number = numberEl.innerText;
 
-        // copy to clipboard
         navigator.clipboard.writeText(number).then(() => {
             alert('Copied: ' + number);
 
-            // increase copy counter
             copies = copies + 1;
             copyCountEl.innerText = copies;
         }).catch(err => {
@@ -43,7 +41,7 @@ for (const btn of copyBtns) {
     });
 }
 
-// call function
+// call 
 const callBtns = document.getElementsByClassName('call-btn');
 for (const btn of callBtns) {
     btn.addEventListener('click', function () {
@@ -65,7 +63,7 @@ for (const btn of callBtns) {
             historyList.innerHTML = '';
         }
 
-        // get current local time
+        // call time
         const now = new Date();
         const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
@@ -86,7 +84,7 @@ for (const btn of callBtns) {
         left.appendChild(p2);
         li.appendChild(left);
 
-        // add time info
+        // time info
         const right = document.createElement('div');
         right.className = 'text-xs text-gray-400';
         right.innerText = timeStr;
@@ -96,7 +94,7 @@ for (const btn of callBtns) {
     });
 }
 
-// clear function
+// clear
 clearBtn.addEventListener('click', function () {
     historyList.innerHTML = '<li class="text-gray-400">No calls yet.</li>';
 });
