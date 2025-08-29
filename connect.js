@@ -27,7 +27,7 @@ for (const btn of copyBtns) {
     btn.addEventListener('click', function () {
 
         const card = this.closest('.relative');
-        const numberEl = card.querySelector('p.mt-3'); 
+        const numberEl = card.querySelector('p.mt-3');
         const number = numberEl.innerText;
 
         navigator.clipboard.writeText(number).then(() => {
