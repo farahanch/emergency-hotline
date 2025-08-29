@@ -21,7 +21,7 @@
         <!-- nav-left -->
         <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full overflow-hidden">
-                <img src="./assets/logo.png" alt="Logo" class="w-full h-full object-cover">
+                <img src="./assets/logo.png" alt="Logo" class="w-full h-full">
             </div>
             <h1 class="text-xl font-bold text-[#006747] leading-tight">
                 Emergency <br> Service
@@ -52,7 +52,7 @@
 
             <!-- logo -->
             <div class="w-20 h-20 rounded-full overflow-hidden ring-4 ring-white/40">
-                <img src="./assets/logo-dark.png" alt="Govt. Logo" class="w-full h-full object-cover">
+                <img src="./assets/logo-dark.png" alt="Govt. Logo" class="w-full h-full">
             </div>
 
             <!-- title -->
@@ -70,18 +70,18 @@
     </header>
 
     <!-- cards + call history -->
-    <!-- ===== Main: Cards + Call History ===== -->
 <main class="w-full mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-  <!-- LEFT: 9 cards (3x3 on xl, 2x on sm) -->
   <section id="cards" class="lg:col-span-9 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
 
     <!-- Card 1 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-rose-50 grid place-items-center">
-          <img src="./assets/emergency.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/emergency.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">National Emergency Number</h3>
         <p class="text-sm text-gray-500">National Emergency</p>
@@ -93,14 +93,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="National Emergency Number" data-number="999">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 2 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-blue-50 grid place-items-center">
-          <img src="./assets/police.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/police.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Police Helpline Number</h3>
         <p class="text-sm text-gray-500">Police</p>
@@ -112,14 +114,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Police Helpline Number" data-number="999">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 3 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-rose-50 grid place-items-center">
-          <img src="./assets/fire-service.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/fire-service.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Fire Service Number</h3>
         <p class="text-sm text-gray-500">Fire Service</p>
@@ -131,14 +135,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Fire Service Number" data-number="999">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 4 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-pink-50 grid place-items-center">
-          <img src="./assets/ambulance.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/ambulance.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Ambulance Service</h3>
         <p class="text-sm text-gray-500">Ambulance</p>
@@ -150,14 +156,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Ambulance Service" data-number="1994-999999">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 5 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-emerald-50 grid place-items-center">
-          <img src="./assets/women-child.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/emergency.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Women & Child Helpline</h3>
         <p class="text-sm text-gray-500">Women & Child Helpline</p>
@@ -169,14 +177,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Women & Child Helpline" data-number="109">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 6 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-amber-50 grid place-items-center">
-          <img src="./assets/anti-corruption.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/emergency.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Anti-Corruption Helpline</h3>
         <p class="text-sm text-gray-500">Anti-Corruption</p>
@@ -188,14 +198,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Anti-Corruption Helpline" data-number="106">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 7 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-yellow-50 grid place-items-center">
-          <img src="./assets/electricity.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/emergency.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Electricity Helpline</h3>
         <p class="text-sm text-gray-500">Electricity Outage</p>
@@ -207,14 +219,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Electricity Helpline" data-number="16216">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 8 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-purple-50 grid place-items-center">
-          <img src="./assets/brac.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/brac.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Brac Helpline</h3>
         <p class="text-sm text-gray-500">Brac</p>
@@ -226,14 +240,16 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Brac Helpline" data-number="16445">📞 Call</button>
       </div>
-    </article>
+    </div>
 
     <!-- Card 9 -->
-    <article class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
-      <button class="absolute top-3 right-3 text-gray-400 hover:text-rose-500" aria-label="favorite">💗</button>
+    <div class="relative bg-white rounded-2xl p-5 shadow ring-1 ring-gray-200">
+      <button class="absolute top-3 right-3" aria-label="favorite">
+    <img src="./assets/heart-card.svg" alt="heart icon" class="w-6 h-6 hover:opacity-70 transition">
+  </button>
       <div class="mt-2">
         <div class="w-12 h-12 mb-3 rounded-xl bg-teal-50 grid place-items-center">
-          <img src="./assets/Bangladesh-Railway.png" alt="icon" class="w-7 h-7 object-contain">
+          <img src="./assets/Bangladesh-Railway.png" alt="icon" class="w-7 h-7">
         </div>
         <h3 class="font-semibold">Bangladesh Railway Helpline</h3>
         <p class="text-sm text-gray-500">Bangladesh Railway</p>
@@ -245,11 +261,11 @@
         <button class="h-10 rounded-lg bg-green-600 text-white flex items-center justify-center gap-1 hover:bg-green-700"
                 data-action="call" data-name="Bangladesh Railway Helpline" data-number="163">📞 Call</button>
       </div>
-    </article>
+    </div>
 
   </section>
 
-  <!-- RIGHT: Call History -->
+  <!-- call history -->
   <aside class="lg:col-span-3">
     <div class="bg-white rounded-2xl p-4 shadow">
       <div class="flex items-center justify-between mb-3">
